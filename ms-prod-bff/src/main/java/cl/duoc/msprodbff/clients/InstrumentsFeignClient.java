@@ -12,7 +12,7 @@ import cl.duoc.msprodbff.model.dto.Instrumento;
 
 @Component
 
-@FeignClient(name = "svc-instruments", url = "http://localhost:8080/instrumentos")
+@FeignClient(name = "svc-instruments", url = "http://localhost:8181/instrumentos")
 public interface InstrumentsFeignClient {
     @GetMapping(path = "/instrumento", produces = {"application/json"})
     public List<Instrumento> getAll();
