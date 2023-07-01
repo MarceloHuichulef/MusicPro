@@ -1,0 +1,36 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-MsProdBffApplication<ms-prod-bff>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "cl.duoc.msprodbff.MsProdBffApplication",
+            "projectName": "ms-prod-bff",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=50791 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=ms-prod-bff"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MsProdDbApplication<ms-prod-db>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "cl.duoc.msproddb.MsProdDbApplication",
+            "projectName": "ms-prod-db",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=50773 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=ms-prod-db"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-IntegracionWebpayApplication<integracion-webpay>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "cl.duoc.integracionwebpay.IntegracionWebpayApplication",
+            "projectName": "integracion-webpay",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
